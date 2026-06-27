@@ -20,58 +20,46 @@ Sistem Reservasi Cafe adalah aplikasi berbasis web yang digunakan untuk mengelol
 | Penyimpanan Data | JSON File |
 | Database Opsional | MySQL |
 | Web Server | PHP Built-in Server / Apache XAMPP / Laragon |
-| Tools | VS Code, Browser, XAMPP/Laragon |
+| Tools | VS Code, Browser, XAMPP atau Laragon |
 
 ## Struktur Utama
 
 ```text
-.vscode/
-  settings.json
-aplikasi/
-  Config/
-    AppConfig.php
-  Controller/
-    ApiController.php
-    HomeController.php
-  Domain/
-    Reservation.php
-  Exception/
-    ValidationException.php
-  Repository/
-    ReservationRepository.php
-  Service/
-    ReservationService.php
-  View/
-    components/
-    layout/
-    pages/
-    home.php
-konfigurasi/
-  database.sql
-publik/
-  css/
-    base.css
-    cards.css
-    forms.css
-    layout.css
-    management.css
-    responsive.css
-    style.css
-    tables.css
-    toast.css
-  images/
-    cafe-detail.png
-    cafe-preview.png
-  js/
-    app.js
-    modules/
-  uploads/
-    README.txt
-  index.php
-storage/
-  reservations.json
-autoload.php
-README.md
+cafe-reservation-terstruktur/
+├── .vscode/
+│   └── settings.json
+├── aplikasi/
+│   ├── Config/
+│   │   └── AppConfig.php
+│   ├── Controller/
+│   │   ├── ApiController.php
+│   │   └── HomeController.php
+│   ├── Domain/
+│   │   └── Reservation.php
+│   ├── Exception/
+│   │   └── ValidationException.php
+│   ├── Repository/
+│   │   └── ReservationRepository.php
+│   ├── Service/
+│   │   └── ReservationService.php
+│   └── View/
+│       ├── components/
+│       ├── layout/
+│       ├── pages/
+│       └── home.php
+├── konfigurasi/
+│   └── database.sql
+├── publik/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   │   └── modules/
+│   ├── uploads/
+│   └── index.php
+├── storage/
+│   └── reservations.json
+├── autoload.php
+└── README.md
 ```
 
 ## Fungsi Folder
@@ -93,13 +81,11 @@ README.md
 ### Penyimpanan Data
 
 Secara default, data reservasi disimpan di:
-
 storage/reservations.json
 
 File ini digunakan sebagai database sederhana agar project dapat dijalankan tanpa konfigurasi database tambahan.
 
 Jika ingin menggunakan MySQL, struktur awal database tersedia di:
-
 konfigurasi/database.sql
 
 ## Status Reservasi
