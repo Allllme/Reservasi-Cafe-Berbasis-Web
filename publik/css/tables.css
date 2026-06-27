@@ -1,0 +1,98 @@
+.summary-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-strip div {
+  padding: 22px 30px;
+  border-right: 1px solid var(--border);
+}
+
+.summary-strip div:last-child {
+  border-right: 0;
+}
+
+.summary-strip strong {
+  display: block;
+  color: var(--ink);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.summary-strip span {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.date-filter {
+  display: grid;
+  gap: 6px;
+  min-width: 190px;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  padding: 30px;
+}
+
+.table-card {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  border: 1px solid;
+  border-radius: 13px;
+  padding: 16px 10px;
+}
+
+.table-card.available {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(236, 253, 245, 0.72);
+}
+
+.table-card.occupied {
+  border-color: rgba(123, 74, 37, 0.25);
+  background: rgba(123, 74, 37, 0.08);
+}
+
+.table-number {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.available .table-number {
+  background: #059669;
+}
+
+.occupied .table-number {
+  background: var(--accent);
+}
+
+.available .table-state {
+  color: var(--success);
+}
+
+.occupied .table-state {
+  color: var(--accent);
+}
+
+.table-state {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.capacity {
+  color: var(--muted);
+  font-size: 11px;
+}

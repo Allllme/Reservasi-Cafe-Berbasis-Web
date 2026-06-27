@@ -1,0 +1,57 @@
+@media (max-width: 860px) {
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .table-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .data-table {
+    min-width: 760px;
+  }
+
+  #reservationList {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .header-content,
+  .panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab-button {
+    flex: 1;
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+
+  .form-grid,
+  .summary-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-strip div {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary-strip div:last-child {
+    border-bottom: 0;
+  }
+
+  .panel,
+  .compact-panel,
+  .hours-card,
+  .panel-header,
+  .table-grid {
+    padding: 22px;
+  }
+}

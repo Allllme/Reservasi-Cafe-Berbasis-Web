@@ -1,0 +1,94 @@
+.side-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.hours-card {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  background: var(--accent);
+  color: #fbf6ee;
+}
+
+.hours-card::before,
+.hours-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hours-card::before {
+  width: 150px;
+  height: 150px;
+  top: -38px;
+  right: -32px;
+}
+
+.hours-card::after {
+  width: 92px;
+  height: 92px;
+  left: 24px;
+  bottom: -28px;
+}
+
+.coffee-mark {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.hours-card p,
+.hours-card h2,
+.hours-card strong {
+  position: relative;
+}
+
+.hours-card p {
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  opacity: 0.74;
+  text-transform: uppercase;
+}
+
+.hours-card h2 {
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.hours-card strong {
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.compact-panel {
+  padding: 24px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.info-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-row strong {
+  color: var(--ink);
+}
+
+.note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
